@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         ZStack(alignment: .topTrailing) {
             RotatorView()
-            Text("Made by \(Text("@cedricbahirwe").underline())")
+            Text("Made by [@cedricbahirwe](https://github.com/cedricbahirwe)")
                 .font(.system(size: 20,
                               weight: .semibold,
                               design: .monospaced))
