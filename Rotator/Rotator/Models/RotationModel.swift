@@ -19,4 +19,9 @@ struct Rotator: Equatable {
     var cornerRadius: CGFloat {
         max(width/20 + height/20, 0)
     }
+    
+    let sizeRange: ClosedRange<CGFloat> = 100...600
+    let angleRange: ClosedRange<Double> = 0...360
+    let axisRange: [CGFloat] = [-1,0,1]
+    
 }

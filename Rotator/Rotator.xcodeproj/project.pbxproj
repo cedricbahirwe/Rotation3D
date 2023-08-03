@@ -15,6 +15,11 @@
 		CBAEE2E6292FB3B100046F03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAEE2E5292FB3B100046F03 /* Preview Assets.xcassets */; };
 		CBAEE2ED292FB3BC00046F03 /* RotationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEE2EC292FB3BC00046F03 /* RotationModel.swift */; };
 		CBAEE2F1292FB3FC00046F03 /* RotatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEE2F0292FB3FC00046F03 /* RotatorView.swift */; };
+		CBED0C512A7BCFE500D63CB9 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBED0C502A7BCFE500D63CB9 /* ControlsView.swift */; };
+		CBED0C542A7BD05900D63CB9 /* LabeledSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBED0C532A7BD05900D63CB9 /* LabeledSlider.swift */; };
+		CBED0C562A7BD06A00D63CB9 /* LabeledStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBED0C552A7BD06A00D63CB9 /* LabeledStepper.swift */; };
+		CBED0C582A7BD07700D63CB9 /* LabeledSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBED0C572A7BD07700D63CB9 /* LabeledSegment.swift */; };
+		CBED0C5C2A7BD0BC00D63CB9 /* ColoredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBED0C5B2A7BD0BC00D63CB9 /* ColoredView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		CBAEE2E5292FB3B100046F03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CBAEE2EC292FB3BC00046F03 /* RotationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationModel.swift; sourceTree = "<group>"; };
 		CBAEE2F0292FB3FC00046F03 /* RotatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatorView.swift; sourceTree = "<group>"; };
+		CBED0C502A7BCFE500D63CB9 /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
+		CBED0C532A7BD05900D63CB9 /* LabeledSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledSlider.swift; sourceTree = "<group>"; };
+		CBED0C552A7BD06A00D63CB9 /* LabeledStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledStepper.swift; sourceTree = "<group>"; };
+		CBED0C572A7BD07700D63CB9 /* LabeledSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledSegment.swift; sourceTree = "<group>"; };
+		CBED0C5B2A7BD0BC00D63CB9 /* ColoredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,8 @@
 			children = (
 				CBAEE2E0292FB3B000046F03 /* ContentView.swift */,
 				CBAEE2F0292FB3FC00046F03 /* RotatorView.swift */,
+				CBED0C502A7BCFE500D63CB9 /* ControlsView.swift */,
+				CBED0C522A7BD04C00D63CB9 /* Reusable Views */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -93,6 +105,17 @@
 				CBAEE2E5292FB3B100046F03 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CBED0C522A7BD04C00D63CB9 /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				CBED0C532A7BD05900D63CB9 /* LabeledSlider.swift */,
+				CBED0C552A7BD06A00D63CB9 /* LabeledStepper.swift */,
+				CBED0C572A7BD07700D63CB9 /* LabeledSegment.swift */,
+				CBED0C5B2A7BD0BC00D63CB9 /* ColoredView.swift */,
+			);
+			path = "Reusable Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,10 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBED0C512A7BCFE500D63CB9 /* ControlsView.swift in Sources */,
 				CB4DBD692A7A6D84001778CB /* AnchorValue.swift in Sources */,
+				CBED0C542A7BD05900D63CB9 /* LabeledSlider.swift in Sources */,
 				CBAEE2F1292FB3FC00046F03 /* RotatorView.swift in Sources */,
 				CB4DBD672A7A6D71001778CB /* ThreeDimensionPoint.swift in Sources */,
+				CBED0C582A7BD07700D63CB9 /* LabeledSegment.swift in Sources */,
+				CBED0C562A7BD06A00D63CB9 /* LabeledStepper.swift in Sources */,
 				CBAEE2E1292FB3B000046F03 /* ContentView.swift in Sources */,
+				CBED0C5C2A7BD0BC00D63CB9 /* ColoredView.swift in Sources */,
 				CBAEE2DF292FB3B000046F03 /* RotatorApp.swift in Sources */,
 				CBAEE2ED292FB3BC00046F03 /* RotationModel.swift in Sources */,
 			);
