@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB4DBD672A7A6D71001778CB /* ThreeDimensionPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4DBD662A7A6D71001778CB /* ThreeDimensionPoint.swift */; };
+		CB4DBD692A7A6D84001778CB /* AnchorValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4DBD682A7A6D84001778CB /* AnchorValue.swift */; };
 		CBAEE2DF292FB3B000046F03 /* RotatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEE2DE292FB3B000046F03 /* RotatorApp.swift */; };
 		CBAEE2E1292FB3B000046F03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEE2E0292FB3B000046F03 /* ContentView.swift */; };
 		CBAEE2E3292FB3B100046F03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAEE2E2292FB3B100046F03 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB4DBD662A7A6D71001778CB /* ThreeDimensionPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDimensionPoint.swift; sourceTree = "<group>"; };
+		CB4DBD682A7A6D84001778CB /* AnchorValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorValue.swift; sourceTree = "<group>"; };
 		CBAEE2DB292FB3B000046F03 /* Rotator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rotator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAEE2DE292FB3B000046F03 /* RotatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatorApp.swift; sourceTree = "<group>"; };
 		CBAEE2E0292FB3B000046F03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +40,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB4DBD642A7A6D56001778CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBAEE2EC292FB3BC00046F03 /* RotationModel.swift */,
+				CB4DBD682A7A6D84001778CB /* AnchorValue.swift */,
+				CB4DBD662A7A6D71001778CB /* ThreeDimensionPoint.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB4DBD652A7A6D5E001778CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CBAEE2E0292FB3B000046F03 /* ContentView.swift */,
+				CBAEE2F0292FB3FC00046F03 /* RotatorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CBAEE2D2292FB3B000046F03 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				CBAEE2DE292FB3B000046F03 /* RotatorApp.swift */,
-				CBAEE2E0292FB3B000046F03 /* ContentView.swift */,
-				CBAEE2F0292FB3FC00046F03 /* RotatorView.swift */,
-				CBAEE2EC292FB3BC00046F03 /* RotationModel.swift */,
+				CB4DBD652A7A6D5E001778CB /* Views */,
+				CB4DBD642A7A6D56001778CB /* Models */,
 				CBAEE2E2292FB3B100046F03 /* Assets.xcassets */,
 				CBAEE2E4292FB3B100046F03 /* Preview Content */,
 			);
@@ -143,7 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB4DBD692A7A6D84001778CB /* AnchorValue.swift in Sources */,
 				CBAEE2F1292FB3FC00046F03 /* RotatorView.swift in Sources */,
+				CB4DBD672A7A6D71001778CB /* ThreeDimensionPoint.swift in Sources */,
 				CBAEE2E1292FB3B000046F03 /* ContentView.swift in Sources */,
 				CBAEE2DF292FB3B000046F03 /* RotatorApp.swift in Sources */,
 				CBAEE2ED292FB3BC00046F03 /* RotationModel.swift in Sources */,
