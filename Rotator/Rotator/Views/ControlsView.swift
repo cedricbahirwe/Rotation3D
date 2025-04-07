@@ -75,5 +75,6 @@ struct ControlsView: View {
 struct ControlsView_Previews: PreviewProvider {
     static var previews: some View {
         ControlsView(rotator: .constant(.init()))
+            .previewLayout(.sizeThatFits)
     }
 }

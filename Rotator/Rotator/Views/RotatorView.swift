@@ -20,7 +20,7 @@ struct RotatorView: View {
                     ColoredView(.red, 1)
                     ColoredView(.green, 2)
                 }
-                
+
                 GridRow {
                     ColoredView(.blue, 3)
                     ColoredView(.yellow, 4)
@@ -37,7 +37,7 @@ struct RotatorView: View {
             .animation(.spring(), value: rotator)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .overlay(alignment: .topTrailing, content: {
-                Text("Made by [@cedricbahirwe](https://twitter.com/cedricbahirwe)")
+                Text("Made by [@cedricbahirwe](https://x.com/cedricbahirwe)")
                     .font(.system(size: 20,
                                   weight: .semibold,
                                   design: .monospaced))
@@ -46,15 +46,15 @@ struct RotatorView: View {
             })
             .border(.secondary)
             .padding()
-            
+
             VStack {
                 ControlsView(rotator: $rotator)
-                
+
                 HStack(spacing: 40) {
                     Toggle("\(isFrameOn ? "Disable" : "Enable") Border Frame",
                            isOn: $isFrameOn)
-                        .fixedSize()
-                    
+                    .fixedSize()
+
                     Button("Reset", role: .destructive) {
                         withAnimation(.spring().speed(0.75)) {
                             rotator = Rotator()
