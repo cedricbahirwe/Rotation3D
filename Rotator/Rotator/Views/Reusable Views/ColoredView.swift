@@ -10,12 +10,12 @@ import SwiftUI
 struct ColoredView: View {
     let color: Color
     let number: Int
-    
+
     init(_ color: Color, _ number: Int) {
         self.color = color
         self.number = number
     }
-    
+
     var body: some View {
         GeometryReader { geo  in
             color
@@ -28,12 +28,11 @@ struct ColoredView: View {
                 }
         }
     }
-    
+
     private func getSize(_ geo: GeometryProxy) -> CGFloat {
         min(geo.size.width / 2, geo.size.height / 2)
     }
 }
-
 
 struct ColoredView_Previews: PreviewProvider {
     static var previews: some View {

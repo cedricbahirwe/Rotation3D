@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-func LabeledSegment<T: RandomAccessCollection>(_ label: String,
-                                               value: Binding<T.Element>,
-                                               sources: T) -> some View
+func LabeledSegment<T: RandomAccessCollection>(
+    _ label: String,
+    value: Binding<T.Element>,
+    sources: T) -> some View
 where T.Element: Hashable ,
       T.Element: CustomStringConvertible,
       T.Element: BinaryFloatingPoint
 {
     Label {
-        
         Picker(selection: value, content: {
             ForEach(sources, id: \.self) { item in
                 Text(item.description)
